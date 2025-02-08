@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h3 class = "header_text">Will you go on a date with me this valentine?</h3>
+                <h3 class = "header_text">This may be a boring type of invitation but I would love to make hundreds of this in every occation that will come. This also saves me money but expect to recieve more invitation from me aside from this.</h3>
+            </div>
+            <div class="gif_container">
+                <div class="tenor-gif-embed" data-postid="17693590" data-share-method="host" data-aspect-ratio="1" data-width="50%"><a href="https://tenor.com/view/laimau-cute-cute-cat-kitty-please-gif-17693590">Laimau Cute GIF</a>from <a href="https://tenor.com/search/laimau-gifs">Laimau GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+
+    
+</html>
